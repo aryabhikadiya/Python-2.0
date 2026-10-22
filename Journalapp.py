@@ -7,7 +7,27 @@ while True:
         add = input("Please enter an Entry: ")
         with open("Journal.txt","a")as store:
             store.write("\n" + add)
-        print("{} has been saved".format(add))
+        print("{} has been saved".format(add)) 
+
+
+    elif ans == "2":
+        with open("Journal.txt","r")as store:
+            print (store.read())
+            
+        
+
+    elif ans == "3":
+        print("You have exitied the journal app. Bye!")
+        break
+
+    else: 
+        print("Enter something valid")
+
+
+    
+
+
+
         
     
         
