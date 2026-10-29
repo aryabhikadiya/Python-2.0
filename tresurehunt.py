@@ -36,8 +36,9 @@ while True:
     for i in grid:
         print(" ".join(i))
 
-    col = int(input("Choose a row(0-4): "))
-    row = int(input("Choose a column(0-4): "))
+    row = int(input("Choose a row(0-4): "))
+    col = int(input("Choose a column(0-4): "))
+    attempts += 1
 
     if tr1 == row and tc1 == col:
         print("You win")
