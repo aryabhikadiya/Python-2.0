@@ -31,3 +31,9 @@ while True:
         print(e) 
         continue
     print(results)
+    
+    choice = input("Do you want to perform another calculation? ")
+    if choice == "no":
+        break
+    else:
+        continue
