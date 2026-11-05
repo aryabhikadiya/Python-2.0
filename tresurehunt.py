@@ -36,10 +36,22 @@ while True:
     for i in grid:
         print(" ".join(i))
 
-    row = int(input("Choose a row(0-4): "))
-    col = int(input("Choose a column(0-4): "))
+    try:
+        row = int(input("Choose a row(0-4): "))
+        col = int(input("Choose a column(0-4): "))
+    except ValueError:
+        print("Your number is invalid please enter a number between 0-4")
+        continue
+    if row not in range(5)or col not in range(5):
+        print("Please enter a number between 0-4")
+        continue
     attempts += 1
 
+    
+
+    
+    
+    
     if tr1 == row and tc1 == col:
         print("You win")
         print("You have took {} to win".format(attempts))
