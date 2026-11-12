@@ -4,6 +4,8 @@ games = ["minecraft","fortnite","call_of_duty","roblox","rocket_league","fc27","
 print("Welcome to the scramble game. Good luck!")
 levels = 5
 
+score = 0
+
 def scramble(word):
     words = list(word)
     random.shuffle(words)
@@ -19,8 +21,11 @@ for i in range(1, levels + 1):
     ans = input("What do you think is the word: ").lower()
     if ans == game:
         print("You have guessed the word correctly!")
+        score = score + 1
     else:
         print("Your answer is wrong. The correct answer is {}".format(game))
+
+print("You got a score of {}/5".format(score))
 
     
 
